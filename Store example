@@ -1,0 +1,26 @@
+CREATE TABLE Big5 (
+id INTEGER PRIMARY KEY,
+name TEXT,
+price REAL,
+aisle INTEGER,
+qty INTEGER
+);
+
+INSERT INTO Big5 VALUES (1, "dumbell", 9.99, 1, 4);
+INSERT INTO Big5 VALUES (2, "running shoes", 34.99, 3, 2);
+INSERT INTO Big5 VALUES (3, "shirt", 12.50, 3, 4);
+INSERT INTO Big5 VALUES (4, "band", 8.50, 2, 3);
+INSERT INTO Big5 VALUES (5, "mat", 13.50, 3, 6);
+INSERT INTO Big5 VALUES (6, "block", 17.50, 1, 1);
+INSERT INTO Big5 VALUES (7, "hiking shoes", 49.99, 3, 3);
+INSERT INTO Big5 VALUES (8, "snowboard", 199.99, 4, 10);
+INSERT INTO Big5 VALUES (9, "coat", 99.99, 4, 5);
+INSERT INTO Big5 VALUES (10, "boots", 125.50, 4, 6);
+INSERT INTO Big5 VALUES (11, "gloves", 13.99, 3, 4);
+INSERT INTO Big5 VALUES (12, "treadmill", 399.99, 1, 2);
+INSERT INTO Big5 VALUES (13, "kettle bell", 29.99, 1, 5);
+INSERT INTO Big5 VALUES (14, "towel", 5.99, 2, 20);
+INSERT INTO Big5 VALUES (15, "yoga pant", 30.99, 3, 15);
+
+SELECT * FROM Big5 ORDER BY price asc;
+SELECT MAX(qty) FROM Big5;
